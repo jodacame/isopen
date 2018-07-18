@@ -1,6 +1,6 @@
 {
   "name": "isopen",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "isOpen can check a range of ports (TCP) for 'open' or 'closed' status with label name",
   "main": "isopen.js",
   "scripts": {

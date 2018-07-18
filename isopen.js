@@ -5,7 +5,7 @@ const scan = require("./scan");
 
 
 var check = function(host,ports,callback){
-    let response = [];
+    let response = {};
     let list = [];
     if (typeof ports == 'string' || typeof ports == 'number'){
         if(ports.toString().indexOf("-")>-1)
@@ -34,7 +34,7 @@ var next = function (i, callback, host, response, list){
     let port = list[i];
     
     scan(host,port,function(error,resp){
-        response.push(resp);
+        response[resp.port] = resp;
         if(i<list.length-1)
             next(i + 1, callback, host, response, list);
         else

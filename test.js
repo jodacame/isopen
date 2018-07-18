@@ -2,7 +2,7 @@ const isopen = require("./isopen");
 
 
 isopen('github.com', 80,function(response){
-    console.log("TEST: Single Port (21)");
+    console.log("TEST: Single Port (80)");
     console.log(response);
 })
 

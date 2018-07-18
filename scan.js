@@ -12,14 +12,14 @@ var check = function (host,port,callback){
 
     socket.setTimeout(500)
     socket.on('timeout', function () {
-        status = 'closed'
+        status = false
         error = new Error('Timeout 500ms')
         socket.destroy()
     })
 
 
     socket.on('connect', function () {
-        status = 'open'
+        status = true
         socket.destroy()
     })
     
@@ -29,7 +29,7 @@ var check = function (host,port,callback){
         } else {
             connectionRefused = true
         }
-        status = 'closed'
+        status = false
     })
     
     socket.on('close', function (exception) {
@@ -45,7 +45,7 @@ var check = function (host,port,callback){
         if (!label)
             label = 'unknow';
         
-        r[port] = { status: status, label: label};
+        r = { port: port,isOpen: status, label: label};
         callback(error,r);
     })
 
