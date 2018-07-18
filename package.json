@@ -1,0 +1,28 @@
+{
+  "name": "isopen",
+  "version": "1.0.0",
+  "description": "isOpen can check a range of ports (TCP) for 'open' or 'closed' status with label name",
+  "main": "isopen.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jodacame/isopen.git"
+  },
+  "keywords": [
+    "ports",
+    "portscanner",
+    "nmap",
+    "checker",
+    "status",
+    "port",
+    "security"
+  ],
+  "author": "Jodacame (https://github.com/jodacame/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jodacame/isopen/issues"
+  },
+  "homepage": "https://github.com/jodacame/isopen#readme"
+}
