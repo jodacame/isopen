@@ -1,7 +1,8 @@
 # isopen
 isOpen can check a range of ports (TCP) for 'open' or 'closed' status with label name (Ports Scanner)
 
-[![NPM](https://nodei.co/npm/isopen.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/isopen/)
+[<img src="https://raw.githubusercontent.com/jodacame/isopen/master/assets/logo.png" width="100px">](https://isopen.net/)
+
 
 [![NPM](https://nodei.co/npm/isopen.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/isopen/)
 
